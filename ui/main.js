@@ -1,2 +1,2 @@
-document.getElementById("Hello World").innerHTML="Hello World";
+ document.getElementById("demo").innerHTML="Hello World";
 
