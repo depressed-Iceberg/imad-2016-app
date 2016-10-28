@@ -1,2 +1,2 @@
-document.write("Hello World");
+document.getElementById("Hello World").innerHTML="Hello World";
 
