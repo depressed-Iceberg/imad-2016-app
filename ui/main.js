@@ -1,5 +1,2 @@
-console.log('Loaded!');
-<script>
-document.write("Hello World");
+document.getElementById("demo").innerHTML="Hello World"
 
-</script> 
