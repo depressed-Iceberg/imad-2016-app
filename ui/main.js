@@ -1,4 +1,4 @@
- document.getElementById("demo").innerHTML="Hello World";
+ //document.getElementById("demo").innerHTML="Hello World";
 
     
     /*<div class="center">
