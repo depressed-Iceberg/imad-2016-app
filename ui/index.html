@@ -6,7 +6,15 @@
          
     </head>
     <body>
-        <script src="ui/main.js" type="text/javascript"></script>
+        <script src="ui/main.js" type="text/javascript">var name;
+        name = prompt("Enter your name");
+        if(name==kapil|| name==chinmay){
+        var d=document.getElementById("demo");
+        d.innerHTML="Yes"+name+"you are a member";}
+        else{
+            document.getElementById("demo").innerHTML="Sorry you are not a member"
+        }
+        </script>
       <p id="demo"> </p>
          <div class="center">
             <img id = 'kek' src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUoQQz-mKtvOyfIvGdeYmfagxz_W2KJCAxBreXMa_iFpS94qA98Mu_ww" class="img-medium"/>
