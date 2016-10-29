@@ -1,15 +1,18 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html>
-<body>
+    <body>
+        <h1 id="demo"> Hey </h1>
+        <button onclick="myFunc()">Just Goddam Press it </button>
+        <script>
+        function myFunc(){
+        var name = prompt("Enter your name","Dickwad");
+        if(name==kapil || name==chinmay)
+        document.getElementById("demo").innerHTML="Yes"+name+"you are a member";
+        else
+            document.getElementById("demo").innerHTML="Sorry you are not a member";
+        }
+        </script>
 
-<h1>My First Web Page</h1>
-<p>My First Paragraph.</p>
-
-<p id="demo"></p>
-
-<script>
-document.getElementById("demo").innerHTML = 5 + 6;
-</script>
-
-</body>
+        </body>
+     
 </html>
