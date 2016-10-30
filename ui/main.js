@@ -1,4 +1,4 @@
-         function myFunc(){
+        function myFunc(){
         var name = prompt("Enter your name","Dickwad");
         if(name=="kapil" || name=="chinmay")
         document.getElementById("demo1").innerHTML=("Yes "+name+" you are a member");
