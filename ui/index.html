@@ -1,15 +1,16 @@
 <!Doctype html>
 <html>
     <body>
-        <h1 id="demo"> Hey </h1>
+        <h1> Hey </h1>
+        <p id="demo1"></p>
         <button onclick="myFunc()">Just Goddam Press it </button>
         <script>
         function myFunc(){
         var name = prompt("Enter your name","Dickwad");
         if(name==kapil || name==chinmay)
-        document.write("Yes"+name+"you are a member");
+        document.getElementById("demo1").innerHTML=("Yes"+name+"you are a member");
         else
-            document.getElementById("demo").innerHTML="Sorry you are not a member";
+            document.getElementById("demo1").innerHTML="Sorry you are not a member";
         }
         </script>
 
