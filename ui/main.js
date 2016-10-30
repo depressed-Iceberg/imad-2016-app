@@ -1,4 +1,13 @@
- //document.getElementById("demo").innerHTML="Hello World";
+         function myFunc(){
+        var name = prompt("Enter your name","Dickwad");
+        if(name=="kapil" || name=="chinmay")
+        document.getElementById("demo1").innerHTML=("Yes "+name+" you are a member");
+        else
+            document.getElementById("demo1").innerHTML="Sorry you are not a member";
+        }
+    
+
+//document.getElementById("demo").innerHTML="Hello World";
 
     
     /*<div class="center">
