@@ -18,9 +18,9 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 var pool = new Pool(config);
-app.get('/test-db',fucntions(req,res) {
+app.get('/test-db',function(req,res) {
  //make a select request 
-  pool.query('SELECT*FROM test',fucntion(err,result){
+  pool.query('SELECT*FROM test',function(err,result){
    if(err){
        res.status(500).send(err,toString());
    }
