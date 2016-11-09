@@ -7,7 +7,7 @@ var config = {
   user: 'depressed-iceberg',
   password: process.env.DB_PASSWORD,
   port:'5432',
-  database: 'depressed-iceberg',
+  database: 'depressed-iceberg'
 };
 
 
