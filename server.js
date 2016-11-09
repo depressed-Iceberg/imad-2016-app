@@ -20,17 +20,14 @@ app.get('/', function (req, res) {
 var pool = new Pool(config);
 app.get('/test-db',fucntions(req,res) {
  //make a select request 
- pool.query('SELECT*FROM test',fucntion(err,result)
+  pool.query('SELECT*FROM test',fucntion(err,result){
    if(err){
        res.status(500).send(err,toString());
    }
    else{
        res.send(JSON.stringify(result));
    }
- )
- //return a response
- 
- 
+  });
 });
 app.get('/article-one',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
