@@ -2,6 +2,7 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var Pool = require('pg').Pool;
+var crypto = require('crypto');
 var config = {
   host: 'http://db.imad.hasura-app.io/',
   user: 'depressed-iceberg',
@@ -29,6 +30,16 @@ app.get('/test-db',function(req,res) {
    }
   });
 });
+
+app.get('/create-user',function(req,res){
+    //username,password
+    var salt = crypto.getRandomBytes(128).toString('hex');
+    var dbString = hash(password,salt);
+    pool.query('INSERT INTO "user" (username,password) VALUES($1,$2) ',[username, dbString],  function(err,result){
+        
+    })
+    
+});
 app.get('/article-one',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
@@ -38,6 +49,7 @@ app.get('/article-two',function(req,res){
 app.get('/article-three',function(req,res){
     res.send('Article one requ');
 });
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
@@ -51,3 +63,4 @@ var port = 8080; // Use 8080 for local development because you might already hav
 app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
+
