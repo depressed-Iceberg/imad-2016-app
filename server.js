@@ -128,6 +128,7 @@ app.get('/', function (req, res) {
 app.use("/img", express.static(__dirname+'/project/img'));
 app.use("/wp-content", express.static(__dirname+'/project/wp-content'));
 app.use("/wp-includes", express.static(__dirname+'/project/wp-includes'));
+app.use("/project", express.static(__dirname+'/project'));
 function hash(input,salt){
     //How do we create hash?
     var hashed = crypto.pbkdf2Sync(input, salt, 100000, 512, 'sha512');
