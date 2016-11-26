@@ -94,6 +94,18 @@ return htmlTemplate;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'project', 'index.html'));
 });
+app.get('/profile', function (req, res) {
+  res.sendFile(path.join(__dirname, 'project/profile', 'index.html'));
+});
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'project', 'index.html'));
+});
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'project', 'index.html'));
+});
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'project', 'index.html'));
+});
 
 function hash(input,salt){
     //How do we create hash?
@@ -192,7 +204,7 @@ app.get('/article/:articleName',function (req,res){
 
 
 
-app.get('/ui/style.css', function (req, res) {
+app.get('/project/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
