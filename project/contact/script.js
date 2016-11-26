@@ -1,4 +1,5 @@
 var gMapAPIKey='AIzaSyDpGPvX8TOalQ_kyzk2Wpx0rmEvlJxiPAo';
+var key= 'AIzaSyArkFLQB5ijw3y-W6mBy9B0jElyOvF79W4';
 
 var map;
 function initMap() {
