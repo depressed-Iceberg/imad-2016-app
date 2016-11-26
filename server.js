@@ -97,11 +97,11 @@ app.get('/', function (req, res) {
 app.get('/profile/index.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'project/profile', 'index.html'));
 });
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'project', 'index.html'));
+app.get('/contact/index.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'project/contact', 'index.html'));
 });
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'project', 'index.html'));
+app.get('/blog/index.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'project/blog', 'index.html'));
 });
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'project', 'index.html'));
