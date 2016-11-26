@@ -106,6 +106,24 @@ app.get('/contact/index.html', function (req, res) {
 app.get('/blog/index.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'project/blog', 'index.html'));
 });
+app.get('/2016/05/09/every-step-counts/index.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'project/2016/05/09/every-step-counts', 'index.html'));
+});
+app.get('/2016/05/08/eat-your-veggies/index.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'project/2016/05/08/eat-your-veggies', 'index.html'));
+});
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'project', 'index.html'));
+});
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'project', 'index.html'));
+});
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'project', 'index.html'));
+});
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'project', 'index.html'));
+});
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'project', 'index.html'));
 });
