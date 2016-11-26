@@ -127,7 +127,7 @@ app.get('/', function (req, res) {
 });
 app.use("/img", express.static(__dirname+'/project/img'));
 app.use("/wp-content", express.static(__dirname+'/project/wp-content'));
-
+app.use("/wp-include", express.static(__dirname+'/project/wp-include'));
 function hash(input,salt){
     //How do we create hash?
     var hashed = crypto.pbkdf2Sync(input, salt, 100000, 512, 'sha512');
