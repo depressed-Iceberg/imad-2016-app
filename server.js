@@ -126,7 +126,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'project', 'index.html'));
 });
 app.use("/img", express.static(__dirname+'/project/img'));
-app.use("/img", express.static(__dirname+'/ui/img'));
+app.use("/wp-content", express.static(__dirname+'/project/wp-content'));
 
 function hash(input,salt){
     //How do we create hash?
